@@ -10,13 +10,14 @@ const Header = () => {
     <>
     <nav className="py-4 justify-between flex items-center">
     <Link>
-    <img src="/logo.png" className="h-13"/>
+    <img src="/logo.png" className="h-19 ml-4"/>
     </Link>
 
-    {/* <Button variant="outline">Login</Button> */}
+   
 
-    <header>
+    <header className='mr-5'>                                  {/* login in header */}
       <SignedOut>
+      <Button variant="outline">Login</Button>
         <SignInButton />
       </SignedOut>
       <SignedIn>
